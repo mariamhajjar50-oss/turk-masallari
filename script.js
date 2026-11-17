@@ -1,9 +1,9 @@
-  // MASAL VERİSİ. gorsel: masalın resmi (images/ klasöründeki dosya yolu; yoksa otomatik SVG kapak çizilir).
+  // MASAL VERİSİ. gorsel: masalın resmi (ana klasördeki dosya yolu; yoksa otomatik SVG kapak çizilir).
   // kaynak: raporda yazdığın kaynakla aynı olmalı. metin: kendi cümlelerinle yeniden anlattığın paragraflar.
   const masallar = [
     {
       id: "aslan-fare",
-      gorsel: "images/aslan-fare.jpg",
+      gorsel: "aslan-fare.jpg",
       ad: "Aslan Padişah ile Fare",
       tur: "Hayvan",
       metin: [
@@ -14,7 +14,7 @@
     },
     {
       id: "altin-sacli",
-      gorsel: "images/altin-sacli.jpg",
+      gorsel: "altin-sacli.jpg",
       ad: "Altın Saçlı Kız",
       tur: "Peri",
       metin: [
@@ -25,7 +25,7 @@
     },
     {
       id: "altin-top",
-      gorsel: "images/altin-top.jpg",
+      gorsel: "altin-top.jpg",
       ad: "Altın Top",
       tur: "Peri",
       metin: [
@@ -36,7 +36,7 @@
     },
     {
       id: "tombul-gozleme",
-      gorsel: "images/tombul-gozleme.jpg",
+      gorsel: "tombul-gozleme.jpg",
       ad: "Tombul Gözleme",
       tur: "Mizah",
       metin: [
@@ -47,7 +47,7 @@
     },
     {
       id: "gozyaslari",
-      gorsel: "images/gozyaslari.jpg",
+      gorsel: "gozyaslari.jpg",
       ad: "Sevgiyle Akan Gözyaşları",
       tur: "Efsane",
       metin: [
@@ -58,7 +58,7 @@
     },
     {
       id: "degirmenci",
-      gorsel: "images/degirmenci.jpg",
+      gorsel: "degirmenci.jpg",
       ad: "Yalancı Değirmenci",
       tur: "Mizah",
       metin: [
@@ -69,7 +69,7 @@
     },
     {
       id: "tahir-zuhre",
-      gorsel: "images/tahir-zuhre.jpg",
+      gorsel: "tahir-zuhre.jpg",
       ad: "Tahir ile Zühre",
       tur: "Efsane",
       metin: [
@@ -80,7 +80,7 @@
     },
     {
       id: "balikci-deniz-kizi",
-      gorsel: "images/balikci-deniz-kizi.jpg",
+      gorsel: "balikci-deniz-kizi.jpg",
       ad: "Balıkçı ile Deniz Kızı",
       tur: "Peri",
       metin: [
@@ -91,7 +91,7 @@
     },
     {
       id: "keloglan-devler",
-      gorsel: "images/keloglan-devler.jpg",
+      gorsel: "keloglan-devler.jpg",
       ad: "Keloğlan ile Devler",
       tur: "Peri",
       metin: [
@@ -102,7 +102,7 @@
     },
     {
       id: "nar-ayva",
-      gorsel: "images/nar-ayva.jpg",
+      gorsel: "nar-ayva.jpg",
       ad: "Ağlayan Nar ile Gülen Ayva",
       tur: "Peri",
       metin: [

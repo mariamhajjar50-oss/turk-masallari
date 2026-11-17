@@ -4,7 +4,7 @@ Programlamaya Giriş dersi vize projesi: 10 Türk masalının okunabildiği bir 
 Bu sürümde proje, tek dosyalık yapıdan **üç ayrı dosyaya** (HTML + harici CSS + harici JavaScript) ayrılmıştır.
 
 ## Canlı Demo
-GitHub Pages bağlantısı: `/https://mariamhajjar50-oss.github.io/turk-masallari/`
+GitHub Pages bağlantısı: `https://KULLANICI_ADI.github.io/REPO_ADI/`
 
 ## Ne yapar?
 - Yıldızlı, kayan yıldızlı bir açılış sayfası; "Keşfetmeye Başla" düğmesiyle masal koleksiyonuna geçilir.
@@ -15,34 +15,31 @@ GitHub Pages bağlantısı: `/https://mariamhajjar50-oss.github.io/turk-masallar
 - Bilgisayar ve telefon ekranına uyumlu tasarım.
 
 ## Bu sürümde yapılan değişiklikler (External CSS ve JS)
-- `<style>` içindeki tüm stiller `css/style.css` dosyasına taşındı ve `<link rel="stylesheet" href="css/style.css">` ile bağlandı.
-- `<script>` içindeki tüm kodlar `js/script.js` dosyasına taşındı ve `</body>` öncesinde `<script src="js/script.js"></script>` ile bağlandı.
-- HTML içine base64 olarak gömülü olan masal görselleri `images/` klasörüne ayrı `.jpg` dosyaları olarak çıkarıldı; `script.js` artık bu dosyaların yoluna başvuruyor.
+- `<style>` içindeki tüm stiller `style.css` dosyasına taşındı ve `<link rel="stylesheet" href="style.css">` ile bağlandı.
+- `<script>` içindeki tüm kodlar `script.js` dosyasına taşındı ve `</body>` öncesinde `<script src="script.js"></script>` ile bağlandı.
+- HTML içine base64 olarak gömülü olan masal görselleri ayrı `.jpg` dosyaları olarak çıkarıldı; `script.js` artık bu dosyaların adlarına başvuruyor.
 - Satır içi `style="..."` kullanımı kaldırıldı, yerine `.bos-mesaj` CSS sınıfı eklendi.
 - Tasarım ve işlevler önceki sürümle aynıdır.
 
 ## Dosya Yapısı
 ```
 ├── index.html        Sayfa iskeleti (HTML)
-├── css/
-│   └── style.css     Tüm stiller
-├── js/
-│   └── script.js     Masal verisi, arama/süzme, favoriler, okuyucu, gökyüzü animasyonu
-├── images/
-│   ├── *.jpg         Masal kapak görselleri
-│   └── ekran/        Ekran görüntüleri
+├── style.css         Tüm stiller (harici CSS)
+├── script.js         Masal verisi, arama/süzme, favoriler, okuyucu, gökyüzü animasyonu (harici JS)
+├── *.jpg             Masal kapak görselleri
+├── ekran-*.png       Ekran görüntüleri
 └── README.md
 ```
 
 ## Nasıl açılır?
 Repoyu indirin (Code → Download ZIP) ve `index.html` dosyasını tarayıcıda açın. Başka bir kurulum veya internet bağlantısı gerekmez.
-Klasör yapısı bozulmamalıdır; `css/`, `js/` ve `images/` klasörleri `index.html` ile aynı yerde durmalıdır.
+Tüm dosyalar `index.html` ile aynı klasörde durmalıdır.
 
 ## Ekran Görüntüleri
-![Açılış](images/ekran/ekran-acilis.png)
-![Masaüstü](images/ekran/ekran-masaustu.png)
-![Okuyucu](images/ekran/ekran-okuyucu.png)
-![Mobil](images/ekran/ekran-mobil.png)
+![Açılış](ekran-acilis.png)
+![Masaüstü](ekran-masaustu.png)
+![Okuyucu](ekran-okuyucu.png)
+![Mobil](ekran-mobil.png)
 
 ## Kullanılan Teknolojiler
 HTML5, CSS3, JavaScript (kütüphanesiz), `localStorage`, Canvas API.
@@ -54,4 +51,4 @@ HTML5, CSS3, JavaScript (kütüphanesiz), `localStorage`, Canvas API.
 Görsellerin kaynağı ve üretim ayrıntıları raporda belirtilmiştir.
 
 ## Geliştirici
-Mariam Al Hajjar– Öğrenci No 86240066
+Ad Soyad – Öğrenci No
