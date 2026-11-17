@@ -4,7 +4,7 @@ Programlamaya Giriş dersi vize projesi: 10 Türk masalının okunabildiği bir 
 Bu sürümde proje, tek dosyalık yapıdan **üç ayrı dosyaya** (HTML + harici CSS + harici JavaScript) ayrılmıştır.
 
 ## Canlı Demo
-GitHub Pages bağlantısı: `https://KULLANICI_ADI.github.io/REPO_ADI/`
+GitHub Pages bağlantısı: `/https://mariamhajjar50-oss.github.io/turk-masallari/`
 
 ## Ne yapar?
 - Yıldızlı, kayan yıldızlı bir açılış sayfası; "Keşfetmeye Başla" düğmesiyle masal koleksiyonuna geçilir.
