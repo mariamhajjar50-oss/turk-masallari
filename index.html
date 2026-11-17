@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eski Zaman Hikâyeleri – Büyülü Türk Masalları</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="gokyuzu" aria-hidden="true"></canvas>
+<div class="ay" aria-hidden="true"></div>
+
+<!-- 1. SAYFA: yıldızlı açılış -->
+<header class="hero" id="top">
+  <div class="hero-ic">
+    <p class="ust-yazi">Dijital Masal Arşivi</p>
+    <h1>Eski Zaman Hikâyeleri</h1>
+    <div class="cizgi"></div>
+    <p class="giris">Bir varmış bir yokmuş… Yüzyıllar boyunca dilden dile anlatılan en güzel Türk masalları, bu özel sayfada modern bir tasarımla yeniden hayat buluyor. Sayfaları çevirin ve masal yolculuğuna çıkın.</p>
+    <button class="btn-ana" id="baslaBtn">✦ Keşfetmeye Başla</button>
+  </div>
+</header>
+
+<!-- 2. SAYFA: masal dünyası -->
+<div id="uygulama" hidden>
+<nav class="ust-menu">
+  <a class="marka" href="#top">Türk Masalları</a>
+  <div class="menu-sag">
+    <a class="menu-link" href="#kutuphaneBolumu">Koleksiyon</a>
+    <button class="btn-islem fav-filtre" id="navFav" aria-label="Favorilerim"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span class="nav-fav-yazi">Favoriler</span> <span class="fav-sayi">0</span></button>
+    <button class="btn-islem" id="rastgeleBtn">Rastgele Masal</button>
+  </div>
+</nav>
+
+<main class="kutuphane" id="kutuphaneBolumu">
+  <div class="baslik-alan">
+    <h2>Masal Koleksiyonu</h2>
+    <p>Okumak istediğiniz masalın kapağına tıklayın.</p>
+  </div>
+  <div class="arama-kutusu">
+    <input type="search" id="aramaInput" aria-label="Masal ara" placeholder="Masal adında veya metinde arayın...">
+    <select id="turSecim" aria-label="Masal türü">
+      <option value="">Tüm Türler</option>
+      <option value="Peri">Peri Masalı</option>
+      <option value="Hayvan">Hayvan Masalı</option>
+      <option value="Efsane">Efsane</option>
+      <option value="Mizah">Mizah / Halk</option>
+    </select>
+    <button class="btn-islem fav-filtre" id="favFiltre" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>Favoriler <span class="fav-sayi">0</span></button>
+  </div>
+  <p class="sonuc-sayisi" id="sonucSayisi" aria-live="polite"></p>
+  <div class="grid-kartlar" id="gridKartlar"></div>
+</main>
+
+<footer>Türk Masalları Derlemesi · Programlamaya Giriş</footer>
+</div><!-- /uygulama -->
+
+<div class="okuyucu-modal" id="okuyucuModal" role="dialog" aria-modal="true" aria-labelledby="modalBaslik" hidden>
+  <div class="okuyucu-ust">
+    <button class="btn-islem" id="kapatModal">‹ Kütüphaneye Dön</button>
+    <h2 id="modalBaslik">Masal Adı</h2>
+    <div class="boyut-grup">
+      <button class="btn-islem fav-modal" id="favModal" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>Favori</button>
+      <button class="btn-islem" id="kucult" aria-label="Yazıyı küçült">A−</button>
+      <button class="btn-islem" id="buyut" aria-label="Yazıyı büyüt">A+</button>
+    </div>
+  </div>
+  <div class="okuyucu-govde"><div class="kitap-sayfalar" id="kitapSayfalar"></div></div>
+  <div class="okuyucu-alt">
+    <button class="btn-islem" id="oncekiSayfa">‹ Önceki</button>
+    <span id="sayfaGosterge">Sayfa 1 / 1</span>
+    <button class="btn-islem" id="sonrakiSayfa">Sonraki ›</button>
+  </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
