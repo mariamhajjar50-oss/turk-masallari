@@ -51,4 +51,4 @@ HTML5, CSS3, JavaScript (kütüphanesiz), `localStorage`, Canvas API.
 Görsellerin kaynağı ve üretim ayrıntıları raporda belirtilmiştir.
 
 ## Geliştirici
-Ad Soyad – Öğrenci No
+Ad Soyad:Mariam Al Hajjar – Öğrenci No:86240066
